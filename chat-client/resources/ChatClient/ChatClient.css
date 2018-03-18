@@ -1,0 +1,288 @@
+*{
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    overflow: auto;
+    margin: 0 auto;
+  }
+
+#main {
+position: absolute;
+width: 100%;
+height: 800px;
+top:0;
+  overflow: auto;
+  margin: 0 auto;
+text-align: center;
+
+}
+#navbar{
+position: absolute;
+visibility: visible;
+height: 80px;
+top: 0;
+margin: 0 auto;
+z-index: 1;
+background-color: gray;
+
+    
+}
+  /* // popup box in center of screen */
+  #loginwindow { 
+    position: absolute;
+    visibility: visible;
+    width: 400px;
+    height: 270px;
+    top: 30%;
+    left: 30%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.90);
+    padding: 10px;
+    padding-bottom: 0px;
+    color: #333;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    border: 2.5px solid gray;
+    border-radius: 10px;
+  }
+  #enterchatroom{
+    position: absolute;
+    visibility: hidden;
+    width: 300px;
+    height: 350px;
+    top: 30%;
+    left: 35%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.50);
+    padding: 10px;
+    color: #333;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border: 2.5px solid gray;
+    border-radius: 10px;
+}
+  #leftpanel{
+      width:300px;
+      position: fixed;
+      overflow:auto;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      top: 0;
+      left:0;
+      z-index: 0;
+      display:inline-block;
+      text-align: center;
+      visibility: hidden;
+    
+  }
+  #chatroom{
+      width: 80%;
+      height: 100%;
+      padding:0;
+      margin:0;
+    position: absolute;
+      top:0;
+      left: 250px;
+      overflow-x:hidden;
+      overflow-y: scroll;
+      display:inline-block;
+      border:none;
+      visibility:hidden;
+
+
+  }
+ 
+  #messagedisplay{     
+    width: 100%;
+    height: 70%;
+    padding-top:40px;
+    padding-bottom:  20px;
+    left: 5%;
+      position: absolute;
+      top:80px;
+     background: rgba(119,255,212, 0.5);
+     color:#333;
+    overflow: scroll;
+    display:inline-block;
+    border: 3px solid gray;
+    border-radius: 10px;
+    vertical-align: bottom;
+    z-index: -1;
+    visibility: hidden;
+  }
+
+  #inputmessage{
+    position:absolute;
+    width: 100%;
+    text-overflow: wrap;
+      top:80%;
+      left: 5%;
+      
+      display:inline-block;
+    height:15%;
+    padding: 5px;
+    margin: 0 auto;
+    border: 3px solid gray;
+    border-radius: 10px;
+    visibility:hidden;
+  }
+
+  h3 {
+        font-size: 24px;
+        color: rgba(119,255,212, 0.9);
+        text-transform: uppercase;
+        font-weight: 500;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 1.5px;
+        line-height: 1.0;
+        transition: all 0.3s ease 0s; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+  }
+ 
+  form, span{
+    font-size: 15px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2.0px;
+    line-height: 1.0;
+    transition: all 0.3s ease-in;
+
+  }
+  #newmessage{
+      position:relative;
+      width: 50%;
+      height:100%;
+      padding: 10px;
+      margin:10px;
+  } 
+
+  p {
+    display:block;
+     padding:0px;
+     margin:0px;
+     letter-spacing: 1.5px;
+     font-style: normal;
+     font-size: 12px;
+     text-transform: uppercase;
+     font-weight: 500;
+     text-align: center;
+     transition: all 0.3s ease 0s;
+     text-rendering: optimizeLegibility;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     color: #333;
+     line-height: 1.0;
+    }
+
+    input[type=text], input[type=password] {
+
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        font-size: 12px;
+        outline: none;
+        padding: 8px;
+        margin-top: 3px;
+        border: 1px solid #333;
+        border-radius: 10px;
+      }
+      
+      input[type=text]:focus, input[type=password]:focus {
+        -moz-box-shadow: 0 0 5px #77ffd4;
+        -webkit-box-shadow: 0 0 5px #77ffd4;
+        box-shadow: 0 0 5px #77ffd4;
+        padding: 8px;
+        margin: 5px;
+        border: 1.0px solid #77ffd4;
+        border-radius: 10px;
+        transition: all 0.3s ease 0s;
+      }
+      
+
+     button {
+        display: inline-block;
+        margin: 20px;
+        padding: 8px;
+        width: 40%;
+        max-width: 300px;
+        font-size: 12px;
+        background: #fff; /* fallback color for old browsers */
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 45px;
+        color: rgba(119,255,212, 0.9);
+        text-transform: uppercase;
+        font-weight: 500;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 1.5px;
+        transition: all 0.3s ease 0s;
+        border: 2px solid gray;
+        box-shadow:0px 8px 15px rgba(0, 0, 0, 0.1);
+      }
+      
+      button:hover,
+      focus,
+      active {
+        background: rgba(255, 255, 255, 0.90);
+        color: rgb(53, 56, 55);
+        transition: all 0.5s ease-in;
+        transform: translateX(3px);
+      }
+
+      h1 {
+      font-size: 36px;
+      color: rgba(119,255,212, 0.9);
+      text-transform: uppercase;
+      font-weight: 1000;
+      text-align: center;
+      text-decoration: none;
+      letter-spacing: 2.5px;
+      transition: all 0.3s ease 0s;
+      }
+      a:active, a:link, a:visited, a:hover {
+        text-decoration: none;
+
+      }
+      #username{
+       font-weight: bold;
+       font-size: 18px;
+       text-align: left;
+       display: block; 
+      }
+      #usermessage{
+        text-align: left;
+        font-size: 16px;
+      }
+      #timestamp{
+        text-align: left;
+        font-style: italic;
+        display: block;
+        font-size: 10px;
+      }
+      #singlemessage{
+        color: black;
+        font-weight: bold;
+        padding-left: 10px;
+        padding-top: 10px;
+      }
+      #messages{
+        align-self: left;
+        margin-left: 10px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        padding-top: 10px;
+        opacity: 0.8;
+        max-width: 60%;
+        white-space: normal;
+        line-height: 120%;
+      }

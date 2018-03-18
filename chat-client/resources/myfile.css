@@ -1,0 +1,62 @@
+#loginwindow {
+  color: #1266CF;
+  font-style:italic;
+  font-size: 15 px;
+  font-weight: bold;
+}
+#chatroom{
+
+}
+
+button{
+  
+}
+
+h3 {
+  text-decoration: none;
+  color: #535F6E;
+  text-align: justify;
+}
+
+a {text-decoration: none;
+color: #75FBD0;}
+a:hover {
+  color: #75FBD0;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+a:visited{
+  color : #4233FF;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+img {
+  align-items: center;
+}
+
+p.COMINGSOON {
+  font-size: 30px;
+  font-weight: normal;
+  font-family:fantasy;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+.bg {
+    background-color: white;
+    position:fixed;
+    height:100%;
+    width:100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    left: 0;
+    top:0;
+}

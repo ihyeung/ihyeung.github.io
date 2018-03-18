@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="ChatClient.css">
+</head>
+
+<body>
+
+<div id = "main">
+ 
+  <div style = "width:100%" style = "height:15%" id = "navbar" align="left" style = "padding-bottom:0px">
+<a href = "ChatClient.html" > <h1>Irene's Chat Room Client</h1> </a>
+  </div>
+<!-- LOGINWINDOW -->
+<div id = "loginwindow">
+  <h3>Enter a username and create a password: </h3>
+ <form> 
+   <!-- <fieldset> -->
+  Username: <input type="text" id="user" required><br>
+  Password: <input type="password" id = "pass" required><br>
+  <button type="button" id="login">Login</button>
+<!-- </fieldset> -->
+</form><p id= "loginstatus" style="visibility:visible"></p><br>
+</div>
+<!-- CHOOSE ROOM TO JOIN  -->
+  <div id = "enterchatroom">
+    <h3> Select a <br>Chatroom </h3>
+    <span>Create a new chatroom or join an existing chatroom:</span> <br><br>
+    <input type="text" id="room" placeholder="chatroom name..."><br>
+  <button type="button" id="enter">Enter chatroom</button
+    ></div>
+
+<!-- CHATROOM -->
+<div id = "leftpanel"><br><br><br> <br><br> <h3> Userlist </h3> <span id = "userlist"></span><br><br><br><br><br> <br><br><br><br> <br><h3> Active Chatrooms </h3> <span id="activechatrooms"></span>
+  <!-- CHATUSERS AND ACTIVE CHATROOMS WILL BE LISTED HERE  -->
+</div>
+
+<!-- DIV WITH CHAT HISTORY WILL GO HERE -->
+  <div id = "chatroom" style = "visibility:hidden" class="chat">
+    <span id = "roomstatus"></span>
+    <div id = "messagedisplay" style = "visibility:hidden" class="chat">
+      <!-- MESSAGES GO IN HERE  -->
+    </div>
+       <br><br>
+    <div id = "inputmessage" style="visibility:hidden" class="chat">
+    <form class="chat">
+      <input type="text" size="50" id = "newmessage" placeholder="  enter your mesage here..." class="chat">
+      <button type="button" id="post" class="chat">Post Message</button>
+  </form>
+    </div>
+</div>
+<!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
+
+<script type = "text/javascript" src = "ChatClient.js"> </script>
+<!-- <script type = "text/javascript" src = "jquery.js"> </script> -->
+
+  </div>
+</body>
+</html>
+
