@@ -1,21 +1,24 @@
 ---
 layout: page
 title: Irene Yeung
-tags: [about, Jekyll, theme, Irene, yeung, ihyeung, Utah, MSD]
-date: 2018-08-31
+tags: [about, Irene, Yeung, ihyeung, Utah, MSD]
+date: 2019-01-20
 comments: false
 ---
 
-<center>Backend software developer. Current Master's student at the University of Utah, graduating in December of 2018. </center>
+<center>Back-end software engineer. Recent master's graduate from the University of Utah's School of Computing.</center>
 
 ## Profile
-* Professional experience developing/maintaining AWS-managed microservices-based Java EE & .NET enterprise applications
-* Frameworks/Libraries: Spring Boot, Spring Data JPA/Hibernate, Jersey/JAX-RS, Jackson, Vavr, Android SDK, .NET/ASP.NET
-* Languages: Java EE/SE, SQL (MySQL, MSSQL), C++, Python, C#, Node.js
-* AWS Services/Infrastructure: ECS, Fargate, EC2, Lambdas, Terraform
-* RESTful APIs, DevOps, continuous integration/deployment pipelines (Jenkins, Chef, Go), acceptance/integration testing (REST Assured, Mockito), Agile/Scrum
+* Professional experience developing/maintaining AWS-managed microservices-based Java EE & .NET enterprise applications.
+* Frameworks/Libraries: Spring Boot, Spring Data JPA/Hibernate, Jersey/JAX-RS, Jackson, Vavr, Android SDK, .NET/ASP.NET, Ionic.
+* Languages: Java EE/SE, SQL (MySQL, MSSQL), C++, Python, C#, JavaScript/Typescript
+* AWS Services/Infrastructure: ECS, AWS Fargate, EC2, Lambdas, Terraform, S3, RDS, Elastic Beanstalk.
+* Other skills: RESTful APIs, DevOps (CI/CD), Jenkins, acceptance/integration testing (REST Assured, Mockito, AssertJ, JUnit), Agile/Scrum development (developer and scrum master roles).
 
-## Academic
+## Education
+* Academic background:
+    * Master's of Software Development (MSD) -- University of Utah, December 2018
+    * Biochemistry, Mathematics, B.S. -- Brigham Young University, April 2013
 * Relevant coursework:
   * Application Systems Design
   * Database Systems and Applications
@@ -26,12 +29,8 @@ comments: false
   * Operating Systems & Computer Architecture
   * Intro to Computer Programming
   * Fundamentals of Mathematics (Proofs)
-* Academic background:
-    * Master's of Software Development (MSD) -- University of Utah, expected December 2018
-    * Mathematics minor, Biochemistry, B.S. -- Brigham Young University, 2013
-* Professional background: Clinical/healthcare, academic/clinical research, database management, data analytics, data visualization
 
 ## Contact
 
 [Message](https://www.linkedin.com/in/ihyeung/){: .btn}
-[Email](mailto:yeung.ireneh@utah.edu){: .btn}
+[Email](mailto:yeung.ireneh@gmail.com){: .btn}
