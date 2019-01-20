@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{CD2CD944-3384-4BA7-99FF-5EB5674DA174}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LMS/appsettings.json">
+    <Files>
+      <File FileName="LMS/appsettings.json" Line="3" Column="101" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.LMS PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
